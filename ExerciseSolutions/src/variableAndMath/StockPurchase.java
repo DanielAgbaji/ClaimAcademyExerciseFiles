@@ -13,7 +13,7 @@ buy, and how much money will be left for the CD account?
 RESULT:    Buy 25 shares of stock 
   Invest $275 in CD acco
  */
-package exercisesolutions;
+package variableAndMath;
 
 /**
  *

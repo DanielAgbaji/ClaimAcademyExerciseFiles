@@ -12,7 +12,7 @@ RESULT:    2hrs:8mins:44secs
 Bonus: What was his average pace per mile in minutes? 
 RESULT:    Average pace: 4.885 minutes per mile
  */
-package exercisesolutions;
+package variableAndMath;
 
 /**
  *
