@@ -18,7 +18,7 @@ C
 D 
 64 - 71% 
 F 
-0 - 71% 
+0 - 63% (I corrected this range)
 Make a provision for an invalid numeric grade 
 INPUT:     76 
 RESULT:    C 
