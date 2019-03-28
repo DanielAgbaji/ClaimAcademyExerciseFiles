@@ -31,7 +31,7 @@ package conditionalLogicExerciseSet;
     }
      
   
-// Elements of array are objects of a class Student. 
+// Elements of array are objects of a class Day. 
 public class WeekDay 
 { 
     public static void main (String[] args) 
