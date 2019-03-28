@@ -68,7 +68,7 @@ public class LetterGrade {
                 System.out.println("F is your grade");
                 break;
             default:
-                    System.out.println("You got an invalide grade");
+                    System.out.println("You entered an invalide grade");
                     break;
     }
         
