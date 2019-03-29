@@ -30,25 +30,40 @@ public class KioskChangeCalculator {
         
         double prize = 17.18;
         
-        double returnChange = getReturnChange(cash, prize);
+        int returnChange = (int)getReturnChange(cash, prize);
         
-        System.out.println(returnChange);
-        
-    }
-    
-    public static double getReturnChange(int cash, double prize){
-        
-        
-        double change = (double)(cash - prize)*100;
-        
-        double returnChange = change/2;
-        
+        System.out.println("Your change in cent is " +returnChange);
         if (returnChange == 41 ){
           
             System.out.println ("Your change is "  +returnChange);
             
             
         }
+        
+    }
+    
+    public static double getReturnChange(int cash, double prize){
+        
+        //currency conversion
+        /*
+        1 Dollar = 100 cents;
+            1 Nickel = 1 Cent;
+            1 Penny = 5 cent;
+            1 Quarter = 10;
+            1 Dime = 25;
+        
+        
+        
+        */
+        
+        // converting transaction from dollars into cents
+        
+        
+        double change = (double)(cash - prize)*100;
+        
+        double returnChange = change/2;
+        
+        
         
        return returnChange; 
         
