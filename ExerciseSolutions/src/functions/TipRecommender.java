@@ -26,5 +26,43 @@ package functions;
  * @author danielagbaji
  */
 public class TipRecommender {
+    public static void main (String [] args){
+        double tap = 33.57;
+        
+        double great = 0.26;
+        
+        double tip= 0;
+        
+        tip = computeTip(tap, great);
+        
+        System.out.println ("You deserve a tip of $" + tip );
+        
+              
+        
+        
+    }
+    public static double computeTip (double tap, double great){
+        
+        /*double poorTipPercent = 16;
+        double goodTipPercent = 22;
+        double greatTipPercent = 26;
+        
+        
+        double poor = poorTipPercent/100;
+        double good = goodTipPercent/100;
+               great = goodTipPercent;
+               
+        */
+        
+        double calculateTip = tap * great;
+        
+        return calculateTip;
+        
+        
+        
+        
+        
+        
+    }
     
 }

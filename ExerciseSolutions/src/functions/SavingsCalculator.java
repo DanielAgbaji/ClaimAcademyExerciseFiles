@@ -15,7 +15,7 @@ savings(20000, 4.5, 15)
 RESULT:    33500 
 */
 package functions;
-import java.lang.Math;
+
 
 /**
  *
