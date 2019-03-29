@@ -13,57 +13,45 @@ PV * [1 + (rate x time) ] (Note that rate is given in %; you will need to covert
 decimal). 
 savings(20000, 4.5, 15)
 RESULT:    33500 
-Tip Recommender
-Write a function that returns the recommended tip based on the amount of the tab 
-and the service performed. 
-Use the following table to calculate the tip: 
-Service Quality  
-Tip Percent 
-Poor    
-16% 
-Good   
-22% 
-Great   
-26% 
-computeTip(33.57, "Great")
-RESULT:    8.7282 
-Kiosk Change Calculator 
-A retail store is building a kiosk to enter sales and handle transactions. When 
-people use cash to pay for an item, the kiosk needs to tell the cashier how much 
-change should be given back to the customer. 
-You are developing a simple calculator
- that will compute the right amount and most 
-e
-ffi
-cient denominations of change for a speci
-fi
-c purchase. 
-returnChange(18, 17.18)
-RESULT:    Quarters: 3 
-  Dimes: 0 
-  Nickels: 1 
-  Pennies:
 */
 package functions;
+import java.lang.Math;
 
 /**
  *
  * @author danielagbaji
  */
+
 public class SavingsCalculator {
     public static void main (String [] args){
-        int period = 15;
-        double rate   = 4.5;
-        int    presentInvestment = 20000; 
+        
+        int presentInvestment = 20000;
+        double futureValue=0; 
+        
+        futureValue = getFutureValue(presentInvestment, futureValue);
+        
+        System.out.println("The future value of the investment is " + futureValue);
+        
         
     }
-    // Define the future value formula parameters 
-    public static void getFutureValue (int presentInvestment, double ratePeriod){
+    // Define the future value formula parameters
+    // Note the actual formula for future investment is FV=PV[1+(Rate)^15]
+    public static double getFutureValue (int presentInvestment, double ratePeriod){
         
         int period = 15;
         double rate   = 4.5;
+        double ratePercent = rate/100 + 1;//
+        double result = Math.pow(ratePercent,period);
+        ratePeriod = result;
         int presentInvestement = 20000;
+
+            
+        double futureValue = presentInvestement * ratePeriod;
         
+        
+        
+        System.out.println(futureValue);
+        return futureValue;
         
        
        
