@@ -25,20 +25,39 @@ package functions;
  */
 public class KioskChangeCalculator {
     public static void main (String [] args){
+         //currency conversion
+        /*
+        1 Dollar = 100 cents;
+            1 Nickel = 1 Cent;
+            1 Penny = 5 cent;
+            1 Quarter = 10;
+            1 Dime = 25;
         
+        
+        
+        */
         int cash = 18;
         
         double prize = 17.18;
         
         int returnChange = (int)getReturnChange(cash, prize);
         
-        System.out.println("Your change in cent is " +returnChange);
-        if (returnChange == 41 ){
+        //System.out.println("Your change in cent is " +returnChange);
+        
+        // testing for donomination
+        int testForNickel = returnChange/2;
+        if (returnChange>= 10 ){
           
-            System.out.println ("Your change is "  +returnChange);
+            System.out.println ("Your change is ¢"  +returnChange);
             
+            System.out.println ("Nickel:1");
+            System.out.println ("Penny:2");
+            System.out.println ("Quarter:3");
             
         }
+        else 
+            System.out.println("We don't have enough nickel, penny, and quarters for your change");
+                   
         
     }
     
