@@ -56,7 +56,9 @@ public class TipRecommender {
         
         double calculateTip = tap * great;
         
-        return calculateTip;
+        double roundedFigure = Math.round(calculateTip * 10000) /10000.0000;
+        
+        return roundedFigure;
         
         
         
