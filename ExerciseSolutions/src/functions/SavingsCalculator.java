@@ -51,5 +51,22 @@ package functions;
  * @author danielagbaji
  */
 public class SavingsCalculator {
+    public static void main (String [] args){
+        int period = 15;
+        double rate   = 4.5;
+        int    presentInvestment = 20000; 
+        
+    }
+    // Define the future value formula parameters 
+    public static void getFutureValue (int presentInvestment, double ratePeriod){
+        
+        int period = 15;
+        double rate   = 4.5;
+        int presentInvestement = 20000;
+        
+        
+       
+       
+    }
     
 }
